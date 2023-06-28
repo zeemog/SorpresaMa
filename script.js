@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
             // Calcula el tiempo restante hasta el próximo cumpleaños
             var currentDate = new Date();
             var currentYear = currentDate.getFullYear();
-            var birthday = new Date(currentYear + '-05-02'); // Cambia la fecha a la del cumpleaños deseado
+            var birthday = new Date(currentYear + '-07-02'); // Cambia la fecha a la del cumpleaños deseado
 
             //if (currentDate > birthday) {
             //    birthday.setFullYear(currentYear + 1);
