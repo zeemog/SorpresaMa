@@ -1,7 +1,6 @@
 body {
      /* ... Otros estilos ... */
-    background: linear-gradient(to right, #a1ebff, #6cdba2), url(/IMG/pattern-02-01.png);
-    background-repeat: repeat, no-repeat;
+    background: linear-gradient(to right, #a1ebff, #6cdba2);
     background-size: auto, cover;
     background-position: center;
    /* background-size: auto; /* Tamaño original de la imagen */   
@@ -14,8 +13,15 @@ body {
     min-height: 100vh;
 }
 
+@media (max-width: 550px) {
+    body {
+        padding: 10%;
+        align-items: top;       
+    }
+}
+
 #container {
-    max-width: 900px;
+    width:  50%;
     padding: 20px;
     background-color: #fff;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
@@ -24,6 +30,12 @@ body {
     justify-content: center;
     align-items: center;    
     border-radius: 20px; /* Radio de borde */
+}
+
+@media (max-width: 550px) {
+    #container {
+        width: 90%;
+    }
 }
 
 
@@ -93,8 +105,4 @@ button {
 
 
 
-@media screen and (max-width: 480px) {
-    #container {
-        max-width: 90%;
-    }
-}
+
